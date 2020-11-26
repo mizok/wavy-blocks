@@ -85,7 +85,7 @@
       }
       else {
 
-        ctx.lineTo(obj.nodes[i][0], obj.nodes[i][1]);
+        ctx.lineTo(obj.nodes[i][0] + 300 * Math.cos(frameCount / 100), obj.nodes[i][1]);
         ctx.lineTo(cvs.width, cvs.height);
       }
     }
@@ -127,7 +127,7 @@
     }
     else {
 
-      let cvsWidth = window.innerWidth - document.querySelector('.block').getBoundingClientRect().left * 2
+      let cvsWidth = window.innerWidth - document.querySelector('.block').getBoundingClientRect().left * 2 + 300
 
       canvas.width = cvsWidth;
       canvas.height = waveHeight;

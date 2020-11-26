@@ -5,12 +5,12 @@ html,body{
 .block-list{
   list-style: none;
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .block{
-  width: calc((100% - 100px)/3);
+  width: calc((90%)/3);
   height: 400px;
   border-radius: 20px;
   box-shadow:
@@ -34,8 +34,16 @@ html,body{
   justify-content: center;
 }
 
+.block:nth-child(2) canvas{
+  transform: translateX(150px);
+}
+
 .block:nth-child(3){
   justify-content: flex-end;
+}
+
+.block:nth-child(3) canvas{
+  transform: translateX(300px);
 }
 
 .block+.block{
